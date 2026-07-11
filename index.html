@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sequence Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="sequence.css">
+    <script src="layout.js" defer></script>
+    <script src="sequence.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    
+    <!--Home Page-->
+    <div id="home-page" class="page active">
+      <div class="home-top">
+        <h1 class="header">Sequence</h1>
+        <p id="leaderboard-message" class="message">*Entering username means your score will be added to the leaderboard</p>
+        <div class="home-username-and-start">
+          <input id="username" class="home-username" placeholder="Enter Username">
+          <button id="start" class="home-start">
+            Start
+          </button>
+        </div>
+        <button id="access-leaderboard" class="home-leaderboard">Leaderboard</button>
+      </div>
+      <div class="home-bottom">
+        <div id="slide-num-1" class="slide-num">1</div>
+        <div id="slide-num-2" class="slide-num">1</div>
+        <div id="slide-num-3" class="slide-num">1</div>
+        <div id="slide-num-4" class="slide-num">1</div>
+        <div id="slide-num-5" class="slide-num">1</div>
+        <div id="slide-num-6" class="slide-num">1</div>
+      </div>
+    </div>
+
+    <!--Game Page-->
+    <div id="game-page" class="page">
+      <button id="game-back" class="back">Back</button>
+      <div class="game-row">
+        <div id="answered" class="problems-answered">Problems Answered: 0</div>
+        <div id="countdown" role="timer" class="timer" >1:00</div>
+      </div>
+      <div id="sequence" class="sequence-container">
+        <div id="number1" class="game-number">1</div>
+        <div id="number2" class="game-number">2</div>
+        <div id="number3" class="game-number">3</div>
+        <div id="number4" class="game-number">4</div>
+        <div id="number5" class="game-number">5</div>
+        <div id="number6" class="game-number">?</div>
+      </div>
+      <div id="answers" class="answers-container">
+        <button id="answer1" class="answer">1</button>
+        <button id="answer2" class="answer">2</button>
+        <button id="answer3" class="answer">3</button>
+        <button id="answer4" class="answer">4</button>
+      </div>
+    </div>
+
+    <!--Score Page-->
+    <div id="score-page" class="page">
+      <button id="score-back" class="back">Back</button>
+      <div id="score" class="score-container"></div>
+      <div id="final-answered" class="final-problems-answered"></div>
+      <p id="high-score-message" class="message"></p>
+      <button id="play-again" class="play-again-button">Play Again</button>
+      <button id="score-access-leaderboard" class="score-leaderboard">Leaderboard</button>
+    </div>
+
+    <!--Leaderboard Page-->
+    <div id="leaderboard-page" class="page">
+      <button id="leaderboard-back" class="back">Back</button>
+      <h1 class="header">Leaderboard</h1>
+      <div id="leaderboard" class="leaderboard-layout">
+        <div id="loading" class="spinner-container">
+          <div class="spinner"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
