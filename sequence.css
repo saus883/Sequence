@@ -48,6 +48,7 @@ html, body {
 body {
   margin: 0;
   padding: 0;
+  padding-top: env(safe-area-inset-top);
   display: flex;
   height: 100vh;
   align-items: center;
