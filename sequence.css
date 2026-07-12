@@ -236,7 +236,7 @@ button, input {
 
 .game-row {
   height: clamp(50px, 10vh, 100px);
-  width: clamp(none, 90vw, 380px);
+  width: clamp(280px, 82vw, 380px);
   margin-top: 10vh;
   display: flex;
   flex-direction: row;
@@ -259,7 +259,7 @@ button, input {
 }
 .sequence-container {
   height: clamp(50px, 10vh, 100px);
-  width: clamp(none, 90%, 380px);
+  width: clamp(280px, 82vw, 380px);
   border-style: solid;
   border-width: 2px;
   border-radius: 20px;
@@ -407,7 +407,7 @@ button, input {
 }
 .leaderboard-layout {
   height: 75vh;
-  width: clamp(none, 92%, 600px);
+  width: clamp(300px, 92vw, 600px);
   display: flex;
   flex-direction: column;
   overflow-y: auto;
