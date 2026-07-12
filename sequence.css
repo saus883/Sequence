@@ -323,7 +323,7 @@ button, input {
   }
 }
 .answer {
-  font-size: 35px;
+  font-size: clamp(23px, 5.5vw, 35px);
   border-style: none;
   background-color: transparent;
   display: flex;
