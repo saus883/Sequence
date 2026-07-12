@@ -40,7 +40,7 @@
 /*
   OVERALL
 */
-html {
+html, body {
   background: linear-gradient(to bottom, var(--bg), var(--bg-dark));
 }
 body {
@@ -50,8 +50,6 @@ body {
   height: 100vh;
   align-items: center;
   justify-content: center;
-  
-  
 }
 button, input {
   font-family: inherit;
