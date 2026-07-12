@@ -42,7 +42,8 @@
 */
 html, body {
   background: linear-gradient(to bottom, var(--bg), var(--bg-dark));
-  overscroll-behavior-y: none;
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 body {
   margin: 0;
