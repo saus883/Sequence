@@ -42,6 +42,7 @@
 */
 html, body {
   background: linear-gradient(to bottom, var(--bg), var(--bg-dark));
+  overscroll-behavior-y: none;
 }
 body {
   margin: 0;
