@@ -458,6 +458,25 @@ button, input {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-weight: 700;
+}
+.legendary-tier {
+  color: hsl(50, 90%, 44%);
+}
+.champion-tier {
+  color: hsl(15, 90%, 44%);
+}
+.epic-tier {
+  color: hsl(303, 87%, 44%);
+}
+.rare-tier {
+  color: hsl(216, 91%, 44%);
+}
+.uncommon-tier {
+  color: hsl(122, 89%, 44%);
+}
+.common-tier {
+  color: var(--text-muted);
 }
 
 .spinner-container {
