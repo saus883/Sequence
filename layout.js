@@ -59,15 +59,15 @@ async function loadLeaderboard() {
         rank.className = 'leaderboard-rank';
         name.className = 'leaderboard-name';
         score.className = 'leaderboard-score';
-        if (entry.score < 40) {
+        if (entry.score < 50) {
           score.classList.add('common-tier');
-        } else if (entry.score < 80) {
+        } else if (entry.score < 100) {
           score.classList.add('uncommon-tier');
-        } else if (entry.score < 110) {
-          score.classList.add('rare-tier');
         } else if (entry.score < 140) {
-          score.classList.add('epic-tier');
+          score.classList.add('rare-tier');
         } else if (entry.score < 170) {
+          score.classList.add('epic-tier');
+        } else if (entry.score < 200) {
           score.classList.add('champion-tier');
         } else {
           score.classList.add('legendary-tier');
