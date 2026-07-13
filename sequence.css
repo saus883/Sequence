@@ -41,19 +41,20 @@
   OVERALL
 */
 
-html, body {
-  background: linear-gradient(to bottom, var(--bg), var(--bg-dark));
-  background-attachment: fixed;
-  min-height: 100vh;
+html {
+  background-color: hsl(0, 0%, 10%);
 }
 body {
   margin: 0;
   padding: 0;
-  padding-top: env(safe-area-inset-top);
   display: flex;
   height: 100vh;
   align-items: center;
   justify-content: center;
+
+  background: linear-gradient(to bottom, var(--bg), var(--bg-dark));
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 button, input {
   font-family: inherit;
