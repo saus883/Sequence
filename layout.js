@@ -69,8 +69,12 @@ async function loadLeaderboard() {
           score.classList.add('epic-tier');
         } else if (entry.score < 200) {
           score.classList.add('champion-tier');
-        } else {
+        } else if (entry.score < 250) {
+          score.classList.add('crystal-tier');
+        } else if (entry.score < 300) {
           score.classList.add('legendary-tier');
+        } else {
+          score.classList.add('god-tier');
         }
 
         rank.textContent = `${index + 1}.`;

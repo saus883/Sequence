@@ -191,7 +191,7 @@ button, input {
   font-size: clamp(28px, 4vw, 33px);
 }
 .home-username:focus {
-    outline: none;
+  outline: none;
 }
 .home-start {
   width: auto;
@@ -491,8 +491,14 @@ button, input {
   align-items: center;
   font-weight: 700;
 }
+.god-tier {
+  color: hsl(0, 0%, 94%);
+}
 .legendary-tier {
-  color: hsl(50, 90%, 44%);
+  color: hsl(50, 78%, 49%);
+}
+.crystal-tier {
+  color: hsl(191, 73%, 67%);
 }
 .champion-tier {
   color: hsl(15, 90%, 44%);
